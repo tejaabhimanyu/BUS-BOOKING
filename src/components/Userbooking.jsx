@@ -56,7 +56,7 @@ class Userbooking extends Component {
                                         <td> {bookings.buscode} </td>
                                         <td>
                                             
-                                                 <button style={{marginLeft: "10px"}} onClick={ () => this.deleteBooking(bookings.id)} className="btn btn-danger">Cancel </button>
+                                                 <button style={{marginLeft: "10px"}} onClick={ () => this.deleteBooking(bookings.id)} className="btn btn-danger">cancel </button>
                                                      </td>
                                     </tr>
                                 )
