@@ -11,7 +11,8 @@ import Addbus from './components/Addbus';
 import Login from './components/Login';
 import Signup from './components/Signup';
 import Afteruserlogin from './components/Afteruserlogin';
-import Userbookinf from  './components/Userbooking';
+
+import ViewBookingComponent from './components/ViewBookingComponent'
 import Userbooking from './components/Userbooking';
 function App() {
   return (
@@ -32,7 +33,8 @@ function App() {
                        <Route path="/signup" component= {Signup}></Route>
                        <Route path="/afteruserlogin" component= {Afteruserlogin}></Route>
                        <Route path="/mybookings" component= {Userbooking}></Route>
-                    
+                       <Route path = "/viewbooking/:id" component = {ViewBookingComponent}></Route>  
+                         
                      </Switch>
                    </div>
                

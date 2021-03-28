@@ -1,4 +1,7 @@
 import React, { Component } from 'react';
+import { ProSidebar, Menu, MenuItem, SubMenu } from 'react-pro-sidebar';
+import 'react-pro-sidebar/dist/css/styles.css';
+
 
 class Homepage extends Component {
     constructor(props){
@@ -23,6 +26,8 @@ class Homepage extends Component {
     render() {
         return (
             <div>
+
+
                 <button className="btn btn-primary" onClick={this.Adminlogin}>Admin Login</button>
              <br></br> 
              <button className="btn btn-primary" onClick={this.Userlogin}>User Login</button> 
