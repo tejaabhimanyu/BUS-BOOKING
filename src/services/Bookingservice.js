@@ -35,6 +35,9 @@ class Bookingservice {
     deleteBooking(bookingId){
         return axios.delete(BOOKINGS_API_BASE_URL+'/' +bookingId);
     }
+    viewbooking(bookingId){
+        return axios.get(BOOKINGS_API_BASE_URL + '/view/'+ bookingId);
+    }
 }
 
 export default new Bookingservice()

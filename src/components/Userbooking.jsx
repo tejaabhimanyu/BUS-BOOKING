@@ -22,7 +22,9 @@ class Userbooking extends Component {
         });
        
     }
-   
+    viewBooking(id){
+        this.props.history.push(`/viewbooking/${id}`);
+    }
     render() {
         return (
             <div>
@@ -57,6 +59,8 @@ class Userbooking extends Component {
                                         <td>
                                             
                                                  <button style={{marginLeft: "10px"}} onClick={ () => this.deleteBooking(bookings.id)} className="btn btn-danger">Cancel </button>
+                                                 <button style={{marginLeft: "10px"}} onClick={ () => this.viewBooking(bookings.id)} className="btn btn-info">View </button>
+                                           
                                                      </td>
                                     </tr>
                                 )
