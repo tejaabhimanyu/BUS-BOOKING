@@ -30,10 +30,10 @@ class Afterlogin extends Component {
     
     render() {
         return (
-            <div>
+            <div class="btn-group-vertical">
+
              <button className="btn btn-primary" onClick={this.bookings}>All bookings</button>
-             <br></br> 
-             <button className="btn btn-primary" onClick={this.registeredusers}>Users registered</button> 
+
              <br></br> 
              <button className="btn btn-primary" onClick={this.savebus}>Add bus</button> 
              <br></br> 

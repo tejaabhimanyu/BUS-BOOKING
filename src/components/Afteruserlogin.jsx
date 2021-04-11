@@ -30,7 +30,8 @@ class Afteruserlogin extends Component {
     render() {
         return (
             
-            <div>
+            <div class="btn-group-vertical">
+
                 <h3>Welcome  {window.localStorage.getItem("x")}</h3>
              <button  className="btn btn-primary" onClick={this.bookings}>My bookings</button>
              <br></br>

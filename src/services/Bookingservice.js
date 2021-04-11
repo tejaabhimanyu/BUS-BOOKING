@@ -29,6 +29,19 @@ class Bookingservice {
     search(source,destination){
         return axios.get(BOOKINGS_API_BASE_URL+'/search/'+source+'/'+destination);
     }
+    userbooking(username){
+        return axios.get(BOOKINGS_API_BASE_URL+'/getusernamebookings/'+username);
+    }
+    deleteBooking(bookingId){
+        return axios.delete(BOOKINGS_API_BASE_URL+'/' +bookingId);
+    }
+  
+
+    getBookingById(bookingid){
+        return axios.get(BOOKINGS_API_BASE_URL + '/' +bookingid);
+    }
+
+
 }
 
 export default new Bookingservice()
