@@ -98,6 +98,13 @@ public class Bookingservice implements Bookinginterface{
 		// TODO Auto-generated method stub
 		return v.search(s, d);
 	}
+	@Override
+	public List<Bookings> getusernamebookings(String username)
+	{
+		// TODO Auto-generated method stub
+		return b.f(username);
+	}
+
 
 
 	
